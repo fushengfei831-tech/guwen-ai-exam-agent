@@ -1,0 +1,206 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  icon_type: emoji
+  mode: workflow
+  name: 古代文学工作流
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/deepseek:0.0.24@9e12eef09973667f0eaf4f082af883167e1de88740b22e71e71488d020c3778a
+    version: null
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/siliconflow:0.0.61@f0952b183715405503a23ccef015e5d43948591fd10b60690f24c07873eed723
+    version: null
+kind: app
+version: 0.7.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload: {}
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: knowledge-retrieval
+      id: 1791447617906-source-1791447643449-target
+      source: '1791447617906'
+      sourceHandle: source
+      target: '1791447643449'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1791447643449-source-1791447656926-target
+      source: '1791447643449'
+      sourceHandle: source
+      target: '1791447656926'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: end
+      id: 1791447656926-source-1791447674562-target
+      source: '1791447656926'
+      sourceHandle: source
+      target: '1791447674562'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        selected: false
+        title: 用户输入
+        type: start
+        variables:
+        - default: ''
+          hint: ''
+          label: query
+          max_length: 256
+          options: []
+          placeholder: ''
+          required: true
+          type: text-input
+          variable: query
+      height: 108
+      id: '1791447617906'
+      position:
+        x: 80
+        y: 282
+      positionAbsolute:
+        x: 80
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+      zIndex: 0
+    - data:
+        dataset_ids:
+        - yMuSLfAv4lijL67sFmnvgKjYEbzO9/dLAmyIIkFWe/3/TGuGT8hd3tDRv1YXiRIT
+        multiple_retrieval_config:
+          reranking_enable: true
+          reranking_mode: reranking_model
+          reranking_model:
+            model: netease-youdao/bce-reranker-base_v1
+            provider: langgenius/siliconflow/siliconflow
+          score_threshold: null
+          top_k: 4
+          weights: null
+        query_attachment_selector: []
+        query_variable_selector:
+        - '1791447617906'
+        - query
+        retrieval_mode: multiple
+        selected: false
+        title: 知识检索
+        type: knowledge-retrieval
+      height: 89
+      id: '1791447643449'
+      position:
+        x: 382
+        y: 282
+      positionAbsolute:
+        x: 382
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 0
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1791447643449'
+          - result
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: deepseek-flash
+          provider: langgenius/deepseek/deepseek
+        model_selector: null
+        prompt_template:
+        - id: 6af2d22f-1f9e-4db6-b2f9-f9517308174c
+          role: system
+          text: "你是中国古代文学考研命题老师。请根据下面的目标范围出一道考研水平的题目。\n\n【目标范围】\n{{#1791447617906.query#}}\n\
+            【题库参考】（优先从下面的题库内容中选一道题出，不要另编）{{#context#}}\n\n【硬性要求】\n1. 题目必须严格限定在「{{#1791447617906.query#}}」所属的朝代或作家范围内。\n\
+            \   例：目标为\"清代\"→ 只能出清代文学的题；目标为\"李白\"→ 只出李白相关的题；\n   目标为\"《红楼梦》\"→ 只出《红楼梦》相关的题。\n\
+            \   绝不允许出其他朝代的题。\n2. 若「{{#1791447617906.query#}}」不属于中国古代文学范围（先秦至清代），直接输出：超出范围\n\
+            3. 题型随机选一种：名词解释（10 分）/ 简答（10 分）/ 论述（20 分）\n4. 直接输出结果，不要输出任何推理过程、思考步骤或解释文字\n\
+            5. 不要输出 <think> 或 </think> 标签\n\n【输出格式】（严格按此格式，不要任何多余内容）\n【题干】……\n【参考答案】……\n\
+            【答题要点】\n- ……\n- ……"
+        selected: true
+        title: LLM
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1791447656926'
+      position:
+        x: 684
+        y: 282
+      positionAbsolute:
+        x: 684
+        y: 282
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 0
+    - data:
+        outputs:
+        - value_selector:
+          - '1791447656926'
+          - text
+          value_type: string
+          variable: text
+        selected: false
+        title: 输出
+        type: end
+      height: 87
+      id: '1791447674562'
+      position:
+        x: 986
+        y: 282
+      positionAbsolute:
+        x: 986
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 0
+    viewport:
+      x: -217.95736846826037
+      y: 43.96961280034452
+      zoom: 0.7297400528407233
+  rag_pipeline_variables: []
