@@ -1,0 +1,329 @@
+[
+ {
+  "raw_len": 46,
+  "answer": "【题干】论述《诗经》的主要艺术成就。（20分）【题干】论述《诗经》的主要艺术成就。（20分）",
+  "stem": "论述《诗经》的主要艺术成就。（20分）【题干】论述《诗经》的主要艺术成就。（20分）",
+  "elapsed": 9.2,
+  "prompt_tokens": 8522,
+  "tools": [
+   "ancientquestion",
+   "ancientquestion",
+   "ancientquestion"
+  ],
+  "n_tools": 3,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "先秦",
+  "trial": 1,
+  "hit": true
+ },
+ {
+  "raw_len": 48,
+  "answer": "论述（20 分）：请论述《诗经》的主要艺术成就。论述（20 分）：请论述《诗经》的主要艺术成就。",
+  "stem": "论述（20 分）：请论述《诗经》的主要艺术成就。论述（20 分）：请论述《诗经》的主要艺术成就。",
+  "elapsed": 11.0,
+  "prompt_tokens": 10824,
+  "tools": [
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion"
+  ],
+  "n_tools": 6,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "先秦",
+  "trial": 2,
+  "hit": true
+ },
+ {
+  "raw_len": 48,
+  "answer": "简答（10 分）：简述汉乐府民歌的主要艺术特色。简答（10 分）：简述汉乐府民歌的主要艺术特色。",
+  "stem": "简答（10 分）：简述汉乐府民歌的主要艺术特色。简答（10 分）：简述汉乐府民歌的主要艺术特色。",
+  "elapsed": 9.6,
+  "prompt_tokens": 19594,
+  "tools": [
+   "shell_run",
+   "shell_run",
+   "shell_run",
+   "shell_run",
+   "shell_run",
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "shell_run",
+   "ancientquestion"
+  ],
+  "n_tools": 12,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "秦汉",
+  "trial": 1,
+  "hit": true
+ },
+ {
+  "raw_len": 70,
+  "answer": "【题干】论述题（20分）：论述《史记》的文学成就及其对后世文学的影响。【题干】论述题（20分）：论述《史记》的文学成就及其对后世文学的影响。",
+  "stem": "论述题（20分）：论述《史记》的文学成就及其对后世文学的影响。【题干】论述题（20分）：论述《史记》的文学成就及其对后世文学的影响。",
+  "elapsed": 9.1,
+  "prompt_tokens": 8305,
+  "tools": [
+   "ancientquestion",
+   "ancientquestion",
+   "ancientquestion"
+  ],
+  "n_tools": 3,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "秦汉",
+  "trial": 2,
+  "hit": true
+ },
+ {
+  "raw_len": 40,
+  "answer": "名词解释（10 分）：请解释\"永明体\"。名词解释（10 分）：请解释\"永明体\"。",
+  "stem": "名词解释（10 分）：请解释\"永明体\"。名词解释（10 分）：请解释\"永明体\"。",
+  "elapsed": 12.8,
+  "prompt_tokens": 28378,
+  "tools": [
+   "shell_run",
+   "shell_run",
+   "shell_run",
+   "shell_run",
+   "shell_run",
+   "shell_run",
+   "ancientquestion",
+   "ancientquestion",
+   "ancientquestion"
+  ],
+  "n_tools": 9,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "魏晋南北朝",
+  "trial": 1,
+  "hit": true
+ },
+ {
+  "raw_len": 106,
+  "answer": "【题干】论述魏晋南北朝时期\"文学自觉\"的主要表现及其对后世文学的影响。（20分）\n\n请作答，答完我来批改。【题干】论述魏晋南北朝时期\"文学自觉\"的主要表现及其对后世文学的影响。（20分）\n\n请作答，答完我来批改。",
+  "stem": "论述魏晋南北朝时期\"文学自觉\"的主要表现及其对后世文学的影响。（20分）",
+  "elapsed": 11.3,
+  "prompt_tokens": 8633,
+  "tools": [
+   "ancientquestion",
+   "ancientquestion",
+   "ancientquestion"
+  ],
+  "n_tools": 3,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "魏晋南北朝",
+  "trial": 2,
+  "hit": true
+ },
+ {
+  "raw_len": 70,
+  "answer": "【题干】论述李煜词的艺术成就及其在词史上的地位。（20分）\n\n请作答。【题干】论述李煜词的艺术成就及其在词史上的地位。（20分）\n\n请作答。",
+  "stem": "论述李煜词的艺术成就及其在词史上的地位。（20分）",
+  "elapsed": 13.4,
+  "prompt_tokens": 9183,
+  "tools": [
+   "ancientquestion",
+   "ancientquestion",
+   "ancientquestion"
+  ],
+  "n_tools": 3,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "隋唐五代",
+  "trial": 1,
+  "hit": true
+ },
+ {
+  "raw_len": 68,
+  "answer": "论述（20 分）：试论述中唐古文运动的兴起背景、理论主张与创作实绩。论述（20 分）：试论述中唐古文运动的兴起背景、理论主张与创作实绩。",
+  "stem": "论述（20 分）：试论述中唐古文运动的兴起背景、理论主张与创作实绩。论述（20 分）：试论述中唐古文运动的兴起背景、理论主张与创作实绩。",
+  "elapsed": 16.8,
+  "prompt_tokens": 28245,
+  "tools": [
+   "shell_run",
+   "shell_run",
+   "shell_run",
+   "shell_run",
+   "shell_run",
+   "shell_run",
+   "ancientquestion",
+   "ancientquestion",
+   "ancientquestion"
+  ],
+  "n_tools": 9,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "隋唐五代",
+  "trial": 2,
+  "hit": false
+ },
+ {
+  "raw_len": 42,
+  "answer": "名词解释（10 分）：请解释\"江西诗派\"。名词解释（10 分）：请解释\"江西诗派\"。",
+  "stem": "名词解释（10 分）：请解释\"江西诗派\"。名词解释（10 分）：请解释\"江西诗派\"。",
+  "elapsed": 7.9,
+  "prompt_tokens": 10567,
+  "tools": [
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion"
+  ],
+  "n_tools": 6,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "宋代",
+  "trial": 1,
+  "hit": true
+ },
+ {
+  "raw_len": 36,
+  "answer": "【题干】名词解释：江西诗派（10分）【题干】名词解释：江西诗派（10分）",
+  "stem": "名词解释：江西诗派（10分）【题干】名词解释：江西诗派（10分）",
+  "elapsed": 8.8,
+  "prompt_tokens": 8260,
+  "tools": [
+   "ancientquestion",
+   "ancientquestion",
+   "ancientquestion"
+  ],
+  "n_tools": 3,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "宋代",
+  "trial": 2,
+  "hit": true
+ },
+ {
+  "raw_len": 62,
+  "answer": "简答：简述元杂剧的体制特征。（10 分）\n\n请作答，我来批改。简答：简述元杂剧的体制特征。（10 分）\n\n请作答，我来批改。",
+  "stem": "简答：简述元杂剧的体制特征。（10 分）",
+  "elapsed": 10.5,
+  "prompt_tokens": 8709,
+  "tools": [
+   "ancientquestion",
+   "ancientquestion",
+   "ancientquestion"
+  ],
+  "n_tools": 3,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "辽金元",
+  "trial": 1,
+  "hit": true
+ },
+ {
+  "raw_len": 64,
+  "answer": "论述（20 分）：试论元杂剧繁荣的原因及其在中国戏曲史上的地位。论述（20 分）：试论元杂剧繁荣的原因及其在中国戏曲史上的地位。",
+  "stem": "论述（20 分）：试论元杂剧繁荣的原因及其在中国戏曲史上的地位。论述（20 分）：试论元杂剧繁荣的原因及其在中国戏曲史上的地位。",
+  "elapsed": 16.6,
+  "prompt_tokens": 11393,
+  "tools": [
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion"
+  ],
+  "n_tools": 6,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "辽金元",
+  "trial": 2,
+  "hit": true
+ },
+ {
+  "raw_len": 68,
+  "answer": "【题干】（论述题，20分）试论汤显祖《牡丹亭》的思想意蕴与艺术成就。【题干】（论述题，20分）试论汤显祖《牡丹亭》的思想意蕴与艺术成就。",
+  "stem": "（论述题，20分）试论汤显祖《牡丹亭》的思想意蕴与艺术成就。【题干】（论述题，20分）试论汤显祖《牡丹亭》的思想意蕴与艺术成就。",
+  "elapsed": 10.7,
+  "prompt_tokens": 8472,
+  "tools": [
+   "ancientquestion",
+   "ancientquestion",
+   "ancientquestion"
+  ],
+  "n_tools": 3,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "明代",
+  "trial": 1,
+  "hit": true
+ },
+ {
+  "raw_len": 98,
+  "answer": "论述（20 分）：请论述汤显祖《牡丹亭》的思想意蕴与艺术成就。（20分）\n\n请作答，答完我来批改。论述（20 分）：请论述汤显祖《牡丹亭》的思想意蕴与艺术成就。（20分）\n\n请作答，答完我来批改。",
+  "stem": "论述（20 分）：请论述汤显祖《牡丹亭》的思想意蕴与艺术成就。（20分）",
+  "elapsed": 11.1,
+  "prompt_tokens": 10987,
+  "tools": [
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion"
+  ],
+  "n_tools": 6,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "明代",
+  "trial": 2,
+  "hit": true
+ },
+ {
+  "raw_len": 40,
+  "answer": "名词解释（10 分）：请解释\"桐城派\"。名词解释（10 分）：请解释\"桐城派\"。",
+  "stem": "名词解释（10 分）：请解释\"桐城派\"。名词解释（10 分）：请解释\"桐城派\"。",
+  "elapsed": 9.5,
+  "prompt_tokens": 10894,
+  "tools": [
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion"
+  ],
+  "n_tools": 6,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "清代",
+  "trial": 1,
+  "hit": true
+ },
+ {
+  "raw_len": 40,
+  "answer": "名词解释（10 分）：请解释\"桐城派\"。名词解释（10 分）：请解释\"桐城派\"。",
+  "stem": "名词解释（10 分）：请解释\"桐城派\"。名词解释（10 分）：请解释\"桐城派\"。",
+  "elapsed": 9.2,
+  "prompt_tokens": 10876,
+  "tools": [
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion",
+   "shell_run",
+   "ancientquestion"
+  ],
+  "n_tools": 6,
+  "leak_answer": false,
+  "leak_think": false,
+  "period": "清代",
+  "trial": 2,
+  "hit": true
+ }
+]
